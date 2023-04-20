@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastapi-hotels"
+version = "0.1.0"
+description = ""
+authors = ["Max Bazarov <bazaroffm@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_hotels"}]
+
+[tool.poetry.dependencies]
+python = "^3.9.13"
+fastapi = {extras = ["all"], version = "^0.95.0"}
+flake8 = "^6.0.0"
+sqlalchemy = "^2.0.9"
+alembic = "^1.10.3"
+asyncpg = "^0.27.0"
+greenlet = "^2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
