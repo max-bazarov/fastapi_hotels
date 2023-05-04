@@ -1,9 +1,10 @@
 from sqlalchemy import Column, Integer, String
+
 from app.database import Base
 
 
-class Users(Base):
-    __tablename__ = 'users'
+class User(Base):
+    __tablename__ = 'user'
 
     id = Column(Integer, primary_key=True, nullable=False)
     email = Column(String, nullable=False)
