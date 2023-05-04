@@ -1,9 +1,10 @@
 from sqlalchemy import Column, Computed, Date, ForeignKey, Integer
+
 from app.database import Base
 
 
-class Bookings(Base):
-    __tablename__ = 'bookings'
+class Booking(Base):
+    __tablename__ = 'booking'
 
     id = Column(Integer, primary_key=True, nullable=False)
     room_id = Column(ForeignKey('rooms.id'), nullable=False)
