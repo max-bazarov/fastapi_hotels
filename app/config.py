@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     DB_NAME: str
+    SECRET_HASH_KEY: str
+    HASH_ALGORYTHM: str
 
     @property
     def database_url(self):
